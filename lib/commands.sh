@@ -11,7 +11,7 @@ export ASDF_PLUGIN_APP_REPO="https://github.com/cert-manager/cert-manager"
 export ASDF_PLUGIN_NAME="asdf-cmctl"
 export ASDF_PLUGIN_REPO="https://github.com/kc-workspace/asdf-cmctl"
 
-# shellcheck source=./utils.sh
+# shellcheck source-path=SCRIPTDIR/utils.sh
 source "${ASDF_PLUGIN_PATH:?}/lib/utils.sh"
 
 ## For bin/latest-stable script
