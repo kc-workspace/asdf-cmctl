@@ -8,7 +8,6 @@
 # export ASDF_PLUGIN_PATH="$ASDF_PLUGIN_PATH"
 export ASDF_PLUGIN_APP_NAME="cmctl"
 export ASDF_PLUGIN_APP_REPO="https://github.com/cert-manager/cert-manager"
-export ASDF_PLUGIN_APP_OUTPUT="cmctl"
 export ASDF_PLUGIN_NAME="asdf-cmctl"
 export ASDF_PLUGIN_REPO="https://github.com/kc-workspace/asdf-cmctl"
 
@@ -28,8 +27,10 @@ _asdf_query_latest() {
   fi
 
   asdf_list_git_tags |
-    asdf_version_filter_by "$query" |
-    asdf_version_stable_only |
+    asdf_version_only 'v' |
+    asdf_version_format 'v' |
+    asdf_version_only "$query" |
+    asdf_version_only_stable |
     asdf_version_sort |
     tail -n1
 }
