@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-## Determine the latest stable version of a tool.
-## https://asdf-vm.com/plugins/create.html#bin-latest-stable
+## List all installable versions.
+## https://asdf-vm.com/plugins/create.html#bin-list-all
 
 set -euo pipefail
 
