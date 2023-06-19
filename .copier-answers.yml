@@ -1,12 +1,13 @@
 ---
 ## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.3.3-20-g3695eb1
+_commit: v1.3.3-22-g20220df
 _src_path: .
 app_description: a command line tool that can help you manage cert-manager and its
     resources inside your cluster.
 app_name: cmctl
 app_repo: https://github.com/cert-manager/cert-manager
 app_version_prefix: v
+app_website: https://cert-manager.io
 custom_arch_enabled: true
 custom_arch_yaml:
     aarch64*: arm64
