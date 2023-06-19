@@ -14,7 +14,7 @@ _kc_asdf_list_filter() {
 
   ## cmctl is provided since cert-manager v1.6.0.
   ## https://cert-manager.io/docs/release-notes/release-notes-1.6/
-  local regex='1.([6-9]|[1-9][0-9]+)'
+  local regex='^\\s*1.([6-9]|[1-9][0-9]+)'
   kc_asdf_tags_only "$tmpfile" "$regex"
 }
 
