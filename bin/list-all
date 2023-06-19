@@ -3,24 +3,30 @@
 ## List all installable versions.
 ## https://asdf-vm.com/plugins/create.html#bin-list-all
 
-set -euo pipefail
+## Your script specific code
+# kc_asdf_main() {
+#   return 0
+# }
 
-export ASDF_PLUGIN_SCRIPT=${BASH_SOURCE[0]}
-export ASDF_PLUGIN_PATH
-ASDF_PLUGIN_PATH=$(dirname "$(dirname "$ASDF_PLUGIN_SCRIPT")")
+## To filter version out from list
+_kc_asdf_list_filter() {
+  local tmpfile="$1"
 
-# shellcheck source-path=SCRIPTDIR/../lib/commands.sh
-source "${ASDF_PLUGIN_PATH:?}/lib/commands.sh"
+  ## cmctl is provided since cert-manager v1.6.0.
+  ## https://cert-manager.io/docs/release-notes/release-notes-1.6/
+  local regex='1.([6-9]|[1-9][0-9]+)'
+  kc_asdf_tags_only "$tmpfile" "$regex"
+}
 
 ## -----------------------------------------------------------------------
 
-## cmctl is provided since cert-manager v1.6.0.
-## https://cert-manager.io/docs/release-notes/release-notes-1.6/
-version_regex='1.([6-9]|[1-9][0-9]+)'
+set -euo pipefail
 
-asdf_list_git_tags |
-  asdf_version_only 'v' |
-  asdf_version_format 'v' |
-  asdf_version_regex "$version_regex" |
-  asdf_version_sort |
-  xargs echo
+export KC_ASDF_PLUGIN_ENTRY_PATH=${BASH_SOURCE[0]}
+export KC_ASDF_PLUGIN_ENTRY_NAME
+KC_ASDF_PLUGIN_ENTRY_NAME="$(basename "$KC_ASDF_PLUGIN_ENTRY_PATH")"
+export KC_ASDF_PLUGIN_PATH
+KC_ASDF_PLUGIN_PATH=$(dirname "$(dirname "$KC_ASDF_PLUGIN_ENTRY_PATH")")
+
+# shellcheck source-path=SCRIPTDIR/../lib/commands.sh
+source "$KC_ASDF_PLUGIN_PATH/lib/commands.sh" "$@"
