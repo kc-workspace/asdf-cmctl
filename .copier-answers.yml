@@ -1,6 +1,6 @@
 ---
 ## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.3.3-6-gf63e2ef
+_commit: v1.3.3-7-g9bbb95f
 _src_path: .
 app_description: a command line tool that can help you manage cert-manager and its
     resources inside your cluster.
