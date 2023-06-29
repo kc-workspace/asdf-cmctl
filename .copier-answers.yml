@@ -1,6 +1,6 @@
 ---
 ## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.3.3-44-g2f41397
+_commit: v1.3.3-45-g8ed26e3
 _src_path: /Users/kamontat/Desktop/Personal/asdf-plugin-template
 app_desc: A command line tool that can help you manage cert-manager and its resources
     inside your cluster.
