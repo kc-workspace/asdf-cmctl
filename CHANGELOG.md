@@ -41,7 +41,7 @@
 
 ### Miscellaneous
 
-* improve log message for readiability ([3517fac](https://github.com/kc-workspace/asdf-cmctl/commit/3517facd020abbca8b5d612970a8026bc8926ca0))
+* improve log message for readability ([3517fac](https://github.com/kc-workspace/asdf-cmctl/commit/3517facd020abbca8b5d612970a8026bc8926ca0))
 * update terminology ([b9c2925](https://github.com/kc-workspace/asdf-cmctl/commit/b9c2925e28e88d474ef5e17a917eb8e8127ed888))
 * use asdf instead of ASDF ([f0a0d54](https://github.com/kc-workspace/asdf-cmctl/commit/f0a0d54d62f7a56301d54bd6be8b81e4b3bc5fea))
 
