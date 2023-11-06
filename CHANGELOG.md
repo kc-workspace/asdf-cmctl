@@ -35,8 +35,8 @@
 
 * add checksum support on macOS ([ea758b2](https://github.com/kc-workspace/asdf-cmctl/commit/ea758b21d73a5dd9c0f8ab53eeef5dd0d83fedf3))
 * **docs:** readme link invalid ([38cdfb9](https://github.com/kc-workspace/asdf-cmctl/commit/38cdfb945cb780d1b397d936063bf51480105cbe))
-* list all failed because invalid regex ([7a8a659](https://github.com/kc-workspace/asdf-cmctl/commit/7a8a659576cae9f60a4c9d0594e8ff2d16428d5e))
-* problem with latest from github ([3002769](https://github.com/kc-workspace/asdf-cmctl/commit/300276916a3f4bf08dc5edaf525b501acbf4f5f2))
+* list all failed because invalid regular expression ([7a8a659](https://github.com/kc-workspace/asdf-cmctl/commit/7a8a659576cae9f60a4c9d0594e8ff2d16428d5e))
+* problem with latest from GitHub ([3002769](https://github.com/kc-workspace/asdf-cmctl/commit/300276916a3f4bf08dc5edaf525b501acbf4f5f2))
 
 
 ### Miscellaneous
