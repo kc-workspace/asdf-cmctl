@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1](https://github.com/kc-workspace/asdf-cmctl/compare/v1.1.0...v1.1.1) (2023-11-06)
+
+
+### Bugfixes
+
+* **docs:** update word typo ([b1ff533](https://github.com/kc-workspace/asdf-cmctl/commit/b1ff53334580838b557b3c9bf8dc836c76f6c924))
+
+
+### Miscellaneous
+
+* **doc:** fix typo ([402bfe6](https://github.com/kc-workspace/asdf-cmctl/commit/402bfe63ac2d5bfa38e954e85c0e005405e76e4e))
+
 ## [1.1.0](https://github.com/kc-workspace/asdf-cmctl/compare/v1.0.0...v1.1.0) (2023-11-06)
 
 
