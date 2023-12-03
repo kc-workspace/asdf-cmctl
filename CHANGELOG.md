@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/kc-workspace/asdf-cmctl/compare/v1.1.1...v1.1.2) (2023-12-03)
+
+
+### Improvements
+
+* update plugin from template [autocommit] ([10bbf03](https://github.com/kc-workspace/asdf-cmctl/commit/10bbf0320d3bbce90b3c4d409ac00281e57c51ca))
+
 ## [1.1.1](https://github.com/kc-workspace/asdf-cmctl/compare/v1.1.0...v1.1.1) (2023-11-06)
 
 
